@@ -68,7 +68,7 @@ Welcome to our first collaborative coding project! In this activity, you will le
 ---
 
 ## ⚠️ Resolving Conflicts (If your branch is out of sync)
-If other students' PRs are merged before yours, your branch might fall behind. This will be the class for most of you. To sync up:
+If other students' PRs are merged before yours, your branch might fall behind. This will be the case for most of the class. To sync up:
 
 1.  **Add the original repo as "upstream":**
     ```bash
