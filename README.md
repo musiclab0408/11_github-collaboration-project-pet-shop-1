@@ -72,7 +72,7 @@ If other students' PRs are merged before yours, your branch might fall behind. T
 
 1.  **Add the original repo as "upstream":**
     ```bash
-    git remote add upstream https://github.com/FEWS-217/11_github-collaboration-project-pet-shopt
+    git remote add upstream https://github.com/FEWS-217/11_github-collaboration-project-pet-shop.git
     ```
 2.  **Sync your main branch:**
     ```bash
