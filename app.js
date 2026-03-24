@@ -1,11 +1,15 @@
 // Add your filename to the petImage list!
 // Format: "studentName_petName.jpg"
 const petImages = [
+<<<<<<< HEAD
+  "sam_lady-cat.jpg",
+  // add your pet file(s) name below this line with a comma at the end:
+  "sam_black-cat.jpg",
+=======
     'sam_lady-cat.jpg',
     // add your pet file(s) name below this line with a comma at the end:
-    'sam_black-cat.jpg',
-
     'alison_ninja.JPG',
+>>>>>>> 47a35c4 (Add Ninja by Alison - Closes #3)
 ];
 
 /*
