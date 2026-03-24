@@ -1,65 +1,65 @@
 // Add your filename to the petImage list!
 // Format: "studentName_petName.jpg"
 const petImages = [
-  "sam_lady-cat.jpg",
-  // add your pet file(s) name below this line with a comma at the end:
-  "sam_black-cat.jpg",
+    'sam_lady-cat.jpg',
+    // add your pet file(s) name below this line with a comma at the end:
+    'sam_black-cat.jpg',
+    'alison_ninja.JPG',
 ];
-
 
 /*
   PLEASE DO NOT MODIFY THE CODE BELOW
 */
 
-const gallery = document.getElementById("gallery");
+const gallery = document.getElementById('gallery');
 
 // This method loops through an array/list to look at each item inside
 petImages.forEach((fileName) => {
-  // we replace any -, remove the file extension, then split the owner and pet name
-  const fileNameTrimmedSpace = fileName.split("-").join(" ");
-  const nameData = fileNameTrimmedSpace.split(".")[0];
-  const [owner, pet] = nameData.split("_");
+    // we replace any -, remove the file extension, then split the owner and pet name
+    const fileNameTrimmedSpace = fileName.split('-').join(' ');
+    const nameData = fileNameTrimmedSpace.split('.')[0];
+    const [owner, pet] = nameData.split('_');
 
-  if (owner && pet) {
-    // Some DOM manipulation to create new pet card elements
-    const card = document.createElement("div");
-    card.className = "pet-card";
+    if (owner && pet) {
+        // Some DOM manipulation to create new pet card elements
+        const card = document.createElement('div');
+        card.className = 'pet-card';
 
-    card.innerHTML = `
+        card.innerHTML = `
             <img src="assets/${fileName}" alt="${pet}" onerror="this.src='https://via.placeholder.com/250x200?text=Image+Missing'">
             <div class="pet-info">
                 <p class="pet-name">${pet.charAt(0).toUpperCase() + pet.slice(1)}</p>
                 <p class="owner-name">Owner: ${owner.charAt(0).toUpperCase() + owner.slice(1)}</p>
             </div>
         `;
-    gallery.appendChild(card); // put the pet card inside the gallery element
-  }
+        gallery.appendChild(card); // put the pet card inside the gallery element
+    }
 });
 
 // Modal constants
-const modal = document.getElementById("pet-modal");
-const modalImg = document.getElementById("modal-img");
-const captionText = document.getElementById("caption");
-const closeBtn = document.querySelector(".close");
+const modal = document.getElementById('pet-modal');
+const modalImg = document.getElementById('modal-img');
+const captionText = document.getElementById('caption');
+const closeBtn = document.querySelector('.close');
 
 // Listen for clicks on the gallery
-gallery.addEventListener("click", (e) => {
-  // Check if the clicked element (or its parent) is a pet-card
-  const card = e.target.closest(".pet-card");
+gallery.addEventListener('click', (e) => {
+    // Check if the clicked element (or its parent) is a pet-card
+    const card = e.target.closest('.pet-card');
 
-  if (card) {
-    const img = card.querySelector("img");
-    const petName = card.querySelector(".pet-name").innerText;
+    if (card) {
+        const img = card.querySelector('img');
+        const petName = card.querySelector('.pet-name').innerText;
 
-    modal.style.display = "block";
-    modalImg.src = img.src;
-    captionText.innerHTML = `${petName}`;
-  }
+        modal.style.display = 'block';
+        modalImg.src = img.src;
+        captionText.innerHTML = `${petName}`;
+    }
 });
 
-// close modal on x icon or outside image click 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal || e.target === closeBtn) {
-    modal.style.display = "none";
-  }
+// close modal on x icon or outside image click
+modal.addEventListener('click', (e) => {
+    if (e.target === modal || e.target === closeBtn) {
+        modal.style.display = 'none';
+    }
 });
