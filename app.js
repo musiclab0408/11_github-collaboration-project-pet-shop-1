@@ -2,8 +2,13 @@
 // Format: "studentName_petName.jpg"
 const petImages = [
   "sam_lady-cat.jpg",
-  // add your pet file(s) name below this line:
+  // add your pet file(s) name below this line with a comma at the end:
 ];
+
+
+/*
+  PLEASE DO NOT MODIFY THE CODE BELOW
+*/
 
 const gallery = document.getElementById("gallery");
 
@@ -27,5 +32,33 @@ petImages.forEach((fileName) => {
             </div>
         `;
     gallery.appendChild(card); // put the pet card inside the gallery element
+  }
+});
+
+// Modal constants
+const modal = document.getElementById("pet-modal");
+const modalImg = document.getElementById("modal-img");
+const captionText = document.getElementById("caption");
+const closeBtn = document.querySelector(".close");
+
+// Listen for clicks on the gallery
+gallery.addEventListener("click", (e) => {
+  // Check if the clicked element (or its parent) is a pet-card
+  const card = e.target.closest(".pet-card");
+
+  if (card) {
+    const img = card.querySelector("img");
+    const petName = card.querySelector(".pet-name").innerText;
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = `${petName}`;
+  }
+});
+
+// close modal on x icon or outside image click 
+modal.addEventListener("click", (e) => {
+  if (e.target === modal || e.target === closeBtn) {
+    modal.style.display = "none";
   }
 });
