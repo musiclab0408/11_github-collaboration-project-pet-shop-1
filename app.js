@@ -11,6 +11,7 @@ const petImages = [
   "rees_bjorn.jpg",
   "tracy_my-minions.jpg",
   "scotty_cookie.jpg",
+  "ana_noPet.jpg",
 ];
 
 /*
