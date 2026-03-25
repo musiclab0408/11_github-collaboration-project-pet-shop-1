@@ -6,13 +6,16 @@ const petImages = [
   "james_dani-dog.jpg",
   "shruti_gigi.jpg",
   "mollie_raster.jpg",
-  "sam_lady-cat.jpg",
   "rees_bjorn.jpg",
-  "tracy_my-minions.jpg",
-  "scotty_cookie.jpg",
   "sam_black-cat.jpg",
+  "tracy_my-minions.jpg",
+  "chris_baby-girl.jpeg",
+  "scotty_cookie.jpg",
+  "aldemar_goldy.jpeg",
+  "chris_bandit.jpeg",
+  "sam_lady-cat.jpg",
   "ana_sakura.jpg",
-  "Ashley_James-the-dream.jpg",
+  "ashley_james-the-dream.jpg",
 ];
 
 /*
