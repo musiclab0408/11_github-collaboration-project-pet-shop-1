@@ -1,15 +1,16 @@
 // Add your filename to the petImage list!
 // Format: "studentName_petName.jpg"
 const petImages = [
-    'sam_lady-cat.jpg',
-    // add your pet file(s) name below this line with a comma at the end:
-    'sam_black-cat.jpg',
-    'alison_ninja.JPG',
-    'james_dani-dog.jpg',
-    "shruti_gigi.jpg",
-    "mollie_raster.jpg",
-    "rees_bjorn.jpg",
-    "tracy_my-minions.jpg",
+  "sam_lady-cat.jpg",
+  // add your pet file(s) name below this line with a comma at the end:
+  "sam_black-cat.jpg",
+  "alison_ninja.JPG",
+  "james_dani-dog.jpg",
+  "shruti_gigi.jpg",
+  "mollie_raster.jpg",
+  "rees_bjorn.jpg",
+  "tracy_my-minions.jpg",
+  "scotty_cookie.jpg",
 ];
 
 /*
