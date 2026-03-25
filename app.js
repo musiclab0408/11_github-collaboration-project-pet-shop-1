@@ -5,6 +5,7 @@ const petImages = [
     // add your pet file(s) name below this line with a comma at the end:
     'sam_black-cat.jpg',
     'alison_ninja.JPG',
+    'james_dani-dog.jpg',
 ];
 
 /*
